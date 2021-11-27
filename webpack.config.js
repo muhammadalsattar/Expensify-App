@@ -5,7 +5,7 @@ module.exports = (env)=> {
     return {
         entry: './src/index.js',
         output: {
-            path: path.resolve(__dirname, 'public/scripts'),
+            path: path.resolve(__dirname, 'public/static'),
             filename: 'bundle.js'
         },
         module: {
