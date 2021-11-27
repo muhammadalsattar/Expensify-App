@@ -1,10 +1,11 @@
 import React from "react"
 import ExpenseList from './ExpenseList'
 import ConnectedListFilter from "./ExpenseListFilter";
+import ConnectedExpensesTotal from "./ExpensesTotal";
 
 const Dashboard = () => (
     <div>
-        <h1>This is expensify dashboard</h1>
+        <ConnectedExpensesTotal/>
         <ConnectedListFilter/>
         <ExpenseList />
     </div>
