@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render expenses total component 1`] = `
+<h3>
+  Viewing 
+  0
+   
+  Expense
+   with 
+  $0.00
+   total cost.
+</h3>
+`;
+
+exports[`Should render expenses total component 2`] = `
+<h3>
+  Viewing 
+  2
+   
+  Expenses
+   with 
+  $3.60
+   total cost.
+</h3>
+`;
