@@ -2,6 +2,7 @@
 import { initializeApp } from "firebase/app";
 // import { getAnalytics } from "firebase/analytics";
 import { getDatabase, ref, set, remove, update, onValue, get, off, push, child, onChildRemoved } from "firebase/database";
+import { GoogleAuthProvider } from "firebase/auth";
 // import * as firebase from 'firebase'
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -25,11 +26,14 @@ const app = initializeApp(firebaseConfig);
 // const analytics = getAnalytics(app);
 const db = getDatabase();
 
+const provider = new GoogleAuthProvider();
+
+export {provider, db as default}
+
+
 // get(ref(db, 'expenses', '-Mrq4sS7vStiSx5lwkTM')).then((snapshot)=>{
 //   console.log(snapshot.val())
 // })
-
-export default db
 
 // // listen for child deletion
 // onChildRemoved(ref(db, 'notes'), (snapshot)=>{console.log(snapshot.val())})
@@ -63,7 +67,7 @@ export default db
 // we can add ,{onlyOnce: true}); to return cached value instead of requesting data from db over and over 
 
 // If you need the data only once, you can use get() to get a snapshot of the data from the database.
-// get(ref(db, 'name')).then((snapshot)=> {console.log(snapshot._node.value_)})
+// get(ref(db, 'expenses')).then((snapshot)=> {console.log(snapshot.val())})
 
 // write to and update database
 // set(ref(db),

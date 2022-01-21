@@ -9,7 +9,7 @@ exports[`Should render Header component 1`] = `
     <NavLink
       activeClassName="is-active"
       exact={true}
-      to="/"
+      to="/dashboard"
     >
       Home
     </NavLink>
@@ -20,5 +20,8 @@ exports[`Should render Header component 1`] = `
       Add expense
     </NavLink>
   </div>
+  <button>
+    Logout
+  </button>
 </div>
 `;

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import moment from 'moment';
 import numeral from 'numeral'
 
-export function ExpenseListItem({ dispatch, id, description, amount, createdAt }) {
+export function ExpenseListItem({ id, description, amount, createdAt }) {
   return (
     <div>
       <Link to={`/edit/${id}`}>

@@ -3,7 +3,7 @@ import ExpenseList from './ExpenseList'
 import ConnectedListFilter from "./ExpenseListFilter";
 import ConnectedExpensesTotal from "./ExpensesTotal";
 
-const Dashboard = () => (
+export const Dashboard = () => (
     <div>
         <ConnectedExpensesTotal/>
         <ConnectedListFilter/>
