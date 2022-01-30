@@ -17,5 +17,6 @@
 7. Firebase
 8. Authentication with Firebase
 9. ES6/ES7
+10. Deploying wih Heroku
 
 ### Visit [Expensify App](https://expenses-tracked.herokuapp.com/).
