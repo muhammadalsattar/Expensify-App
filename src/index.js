@@ -10,7 +10,14 @@ import {Login, Logout} from './actions/auth'
 import AppRouter, {history} from './routers/AppRouter'
 import store from './store/configureStore'
 
-ReactDOM.render(<h1>Loading...</h1>, document.querySelector('#app'))
+ReactDOM.render(
+  <div className="d-flex vh-100 justify-content-center align-items-center">
+    <div className="spinner-grow" role="status">
+      <span className="visually-hidden">Loading...</span>
+    </div>
+  </div>,
+ document.querySelector('#app')
+)
 
 
 

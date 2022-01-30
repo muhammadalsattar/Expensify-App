@@ -1,0 +1,20 @@
+.home-header{
+    width: 80%;
+}
+.home-header .navbar-brand{
+    font-family: $logo-font;
+    font-size: 3em;
+    color: $color-1 !important;
+}
+.home-header button {
+    color: $color-1;
+    background-color: transparent;
+    font-size: 1.5em;
+    font-weight: 400;
+    border: 0;
+}
+hr{
+    color: $color-1;
+    width: 80%;
+    height: 1px;
+}

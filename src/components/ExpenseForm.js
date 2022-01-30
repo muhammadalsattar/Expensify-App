@@ -42,7 +42,10 @@ export default class ExpenseForm extends React.Component {
 
         if (!this.state.description || !this.state.amount)
         {
-            this.setState((state) => ({error: 'Please provide description and amount'}))
+            this.setState(() => ({error: 'Please provide description and amount!'}))
+            if (e.target){
+                e.target.parentNode.style.display='block';
+            }
         }
         else{
             this.setState((state) => ({error: ''}))
@@ -54,23 +57,30 @@ export default class ExpenseForm extends React.Component {
             })
         }
     }
+    closeAlert = ()=>{
+        const alertNode = document.querySelector('.alert')
+        alertNode.style.display='none';
+    }
     render(){
         return(
-            <div>
-                {this.state.error && <p>{this.state.error}</p>}
-                <form onSubmit={this.onSubmit}>
-                    <input type="text" placeholder="description" autoFocus value={this.state.description} onChange={this.onDescriptionChange}></input>
-                    <input type="text" placeholder="Amount" value={this.state.amount} onChange={this.onAmountChange}></input>
-                    <textarea placeholder="Add note for this expense" value={this.state.note} onChange={this.onNoteChange}></textarea>
-                    <SingleDatePicker
-                    date={this.state.createdAt}
-                    onDateChange={this.onDateChange}
-                    focused={this.state.focused}
-                    onFocusChange={this.onFocusChange}
-                    numberOfMonths={1}
-                    isOutsideRange={() => (false)}
-                    />
-                    <button>Submit</button>
+            <div className="expense-form">
+                {this.state.error && <div className="alert mx-auto alert-danger alert-dismissible fade show" role="alert">
+                {this.state.error}
+                <button type="button" onClick={this.closeAlert} className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>}
+                <form className="mx-auto my-4" onSubmit={this.onSubmit}>
+                        <input className="form-control"  type="text" placeholder="description" autoFocus value={this.state.description} onChange={this.onDescriptionChange}></input>
+                        <input className="form-control" type="text" placeholder="Amount" value={this.state.amount} onChange={this.onAmountChange}></input>
+                        <SingleDatePicker
+                        date={this.state.createdAt}
+                        onDateChange={this.onDateChange}
+                        focused={this.state.focused}
+                        onFocusChange={this.onFocusChange}
+                        numberOfMonths={1}
+                        isOutsideRange={() => (false)}
+                        />
+                    <textarea className="form-control" placeholder="Add note for this expense" value={this.state.note} onChange={this.onNoteChange}></textarea>
+                    <button className="btn btn-dark submit-button">Save Expense</button>
                 </form>
             </div>
         )

@@ -1,29 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render error message for invalid form submit 1`] = `
-<div>
-  <p>
-    Please provide description and amount
-  </p>
+<div
+  className="expense-form"
+>
+  <div
+    className="alert mx-auto alert-danger alert-dismissible fade show"
+    role="alert"
+  >
+    Please provide description and amount!
+    <button
+      aria-label="Close"
+      className="btn-close"
+      data-bs-dismiss="alert"
+      onClick={[Function]}
+      type="button"
+    />
+  </div>
   <form
+    className="mx-auto my-4"
     onSubmit={[Function]}
   >
     <input
       autoFocus={true}
+      className="form-control"
       onChange={[Function]}
       placeholder="description"
       type="text"
       value=""
     />
     <input
+      className="form-control"
       onChange={[Function]}
       placeholder="Amount"
       type="text"
-      value=""
-    />
-    <textarea
-      onChange={[Function]}
-      placeholder="Add note for this expense"
       value=""
     />
     <SingleDatePicker
@@ -102,34 +112,42 @@ exports[`Should render error message for invalid form submit 1`] = `
       withFullScreenPortal={false}
       withPortal={false}
     />
-    <button>
-      Submit
+    <textarea
+      className="form-control"
+      onChange={[Function]}
+      placeholder="Add note for this expense"
+      value=""
+    />
+    <button
+      className="btn btn-dark submit-button"
+    >
+      Save Expense
     </button>
   </form>
 </div>
 `;
 
 exports[`Should render expense form 1`] = `
-<div>
+<div
+  className="expense-form"
+>
   <form
+    className="mx-auto my-4"
     onSubmit={[Function]}
   >
     <input
       autoFocus={true}
+      className="form-control"
       onChange={[Function]}
       placeholder="description"
       type="text"
       value=""
     />
     <input
+      className="form-control"
       onChange={[Function]}
       placeholder="Amount"
       type="text"
-      value=""
-    />
-    <textarea
-      onChange={[Function]}
-      placeholder="Add note for this expense"
       value=""
     />
     <SingleDatePicker
@@ -208,35 +226,43 @@ exports[`Should render expense form 1`] = `
       withFullScreenPortal={false}
       withPortal={false}
     />
-    <button>
-      Submit
+    <textarea
+      className="form-control"
+      onChange={[Function]}
+      placeholder="Add note for this expense"
+      value=""
+    />
+    <button
+      className="btn btn-dark submit-button"
+    >
+      Save Expense
     </button>
   </form>
 </div>
 `;
 
 exports[`Should render expense form with expense data 1`] = `
-<div>
+<div
+  className="expense-form"
+>
   <form
+    className="mx-auto my-4"
     onSubmit={[Function]}
   >
     <input
       autoFocus={true}
+      className="form-control"
       onChange={[Function]}
       placeholder="description"
       type="text"
       value="dummy"
     />
     <input
+      className="form-control"
       onChange={[Function]}
       placeholder="Amount"
       type="text"
       value="NaN"
-    />
-    <textarea
-      onChange={[Function]}
-      placeholder="Add note for this expense"
-      value="newNote"
     />
     <SingleDatePicker
       anchorDirection="left"
@@ -314,8 +340,16 @@ exports[`Should render expense form with expense data 1`] = `
       withFullScreenPortal={false}
       withPortal={false}
     />
-    <button>
-      Submit
+    <textarea
+      className="form-control"
+      onChange={[Function]}
+      placeholder="Add note for this expense"
+      value="newNote"
+    />
+    <button
+      className="btn btn-dark submit-button"
+    >
+      Save Expense
     </button>
   </form>
 </div>

@@ -1,0 +1,40 @@
+.addexpense-section form{
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.addexpense-section .alert{
+    width: 70%;
+    border-radius: 0%;
+
+}
+
+.addexpense-section input{
+    margin: .5em;
+    border-radius: 0%;
+    padding: .7em;
+
+}
+
+.addexpense-section textarea{
+    margin: .6em;
+    border-radius: 0%;
+    padding: .5em;
+}
+
+.addexpense-section .SingleDatePicker {
+    width: 101%;
+    padding: .3em;
+    margin: .6em;
+    border-radius: 0%;
+}
+
+.addexpense-section .submit-button{
+    margin: .5em;
+    border-radius: 0%;
+    padding: .7em;
+    width: 100%;
+}

@@ -29,9 +29,9 @@ export class ExpenseListFilter extends React.Component {
     }
     render(){
         return(
-            <div>
-                <input type="text" value={this.props.filters.text} onChange={(e) => this.onTextChange(e.target.value)}></input>
-                <select value={this.props.filters.sortBy} onChange={(e) => this.onSortChange(e.target.value)}>
+            <div className="input-group expenses-filter mx-auto">
+                <input className="form-control" type="text" placeholder="Search Expenses" value={this.props.filters.text} onChange={(e) => this.onTextChange(e.target.value)}></input>
+                <select className="form-select" value={this.props.filters.sortBy} onChange={(e) => this.onSortChange(e.target.value)}>
                     <option value="date">Date</option>
                     <option value="amount">Amount</option>
                 </select>

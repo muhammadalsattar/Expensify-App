@@ -1,25 +1,55 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render expenses total component 1`] = `
-<h3>
-  Viewing 
-  0
-   
-  Expense
-   with 
-  $0.00
-   total cost.
-</h3>
+<div
+  className="total-expenses mx-auto my-5"
+>
+  <h2>
+    Viewing 
+    <strong>
+      0
+    </strong>
+     
+    Expense
+     with 
+    <strong>
+      $0.00
+    </strong>
+     total cost.
+  </h2>
+  <NavLink
+    activeClassName="is-active"
+    className="add-expense"
+    to="/create"
+  >
+    Add expense
+  </NavLink>
+</div>
 `;
 
 exports[`Should render expenses total component 2`] = `
-<h3>
-  Viewing 
-  2
-   
-  Expenses
-   with 
-  $3.60
-   total cost.
-</h3>
+<div
+  className="total-expenses mx-auto my-5"
+>
+  <h2>
+    Viewing 
+    <strong>
+      2
+    </strong>
+     
+    Expenses
+     with 
+    <strong>
+      $3.60
+    </strong>
+     total cost.
+  </h2>
+  <NavLink
+    activeClassName="is-active"
+    className="add-expense"
+    to="/create"
+  >
+    Add expense
+  </NavLink>
+</div>
 `;

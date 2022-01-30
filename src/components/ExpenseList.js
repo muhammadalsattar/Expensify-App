@@ -5,10 +5,10 @@ import getVisibleExpenses from "../selectors/expenses";
 
 export function ExpenseList(props) {
     return (
-        <div>
+        <div className="m-5">
         {
             props.expenses.length < 1? (
-                <p>No Expenses yet</p>
+                <h1 className="noexpenses m-5">No Expenses Yet!</h1>
             ):(
                 props.expenses.map((expense => {
                     return <ConnectedExpenseItem {...expense} key={expense.id}></ConnectedExpenseItem>;

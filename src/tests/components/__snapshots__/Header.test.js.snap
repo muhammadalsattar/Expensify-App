@@ -1,27 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render Header component 1`] = `
-<div>
-  <h1>
-    Expensify
-  </h1>
-  <div>
+<nav
+  className="navbar home-header mx-auto"
+>
+  <div
+    className="container-fluid my-3"
+  >
     <NavLink
-      activeClassName="is-active"
-      exact={true}
-      to="/dashboard"
+      className="navbar-brand"
+      to="/"
     >
-      Home
+      Expensify
     </NavLink>
-    <NavLink
-      activeClassName="is-active"
-      to="/create"
-    >
-      Add expense
-    </NavLink>
+    <button>
+      Logout
+    </button>
   </div>
-  <button>
-    Logout
-  </button>
-</div>
+  <hr
+    className="mx-auto"
+  />
+</nav>
 `;

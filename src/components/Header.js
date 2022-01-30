@@ -4,14 +4,13 @@ import { NavLink } from "react-router-dom";
 import { startLogout } from "../actions/auth";
 
 export const Header = ({logout}) => (
-    <div>
-        <h1>Expensify</h1>
-        <div>
-            <NavLink activeClassName="is-active" exact to="/dashboard">Home</NavLink>
-            <NavLink activeClassName="is-active" to="/create">Add expense</NavLink>
+    <nav className="navbar home-header mx-auto">
+        <div className="container-fluid my-3">
+            <NavLink className="navbar-brand" to="/">Expensify</NavLink>
+            <button onClick={logout}>Logout</button>
         </div>
-        <button onClick={logout}>Logout</button>
-    </div>
+        <hr className="mx-auto"/>
+    </nav>
 )
 
 const mapDispatchToProps = (dispatch)=>{

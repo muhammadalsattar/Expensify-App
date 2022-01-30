@@ -4,7 +4,7 @@ import ConnectedListFilter from "./ExpenseListFilter";
 import ConnectedExpensesTotal from "./ExpensesTotal";
 
 export const Dashboard = () => (
-    <div>
+    <div className="home-section">
         <ConnectedExpensesTotal/>
         <ConnectedListFilter/>
         <ExpenseList />

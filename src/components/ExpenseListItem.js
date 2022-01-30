@@ -6,12 +6,17 @@ import numeral from 'numeral'
 
 export function ExpenseListItem({ id, description, amount, createdAt }) {
   return (
-    <div>
-      <Link to={`/edit/${id}`}>
-        <h3>{description}</h3>
-        <p>{numeral(amount/100).format('$0,0.00')} - {moment(createdAt).format('MMMM Do, YYYY')}</p>
-      </Link>
-    </div>
+      <div className="card expense-item mx-auto my-3">
+        <Link to={`/edit/${id}`}>
+        <div className="card-body bg-light">
+          <h5 className="card-title bg-light">{description}</h5>
+          <p className="card-text bg-light">{numeral(amount/100).format('$0,0.00')}</p>
+        </div>
+        <div className="card-footer bg-light">
+          {moment(createdAt).format('MMMM Do, YYYY')}
+        </div>
+        </Link>
+      </div>
   );
 }
 

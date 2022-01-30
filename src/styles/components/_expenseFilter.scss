@@ -1,0 +1,27 @@
+.expenses-filter{
+    width: 65% !important;
+    text-align: center;
+}
+.expenses-filter input{
+    // border: 2px solid $color-1;
+    // padding: .5em;
+    margin: .2em;
+    border-radius: 0% !important;
+    // outline: 0;
+}
+
+.expenses-filter select{
+    // border: 2px solid $color-1;
+    // outline: 0;
+    // padding: .5em;
+    margin: .2em;
+    border-radius: 0%;
+}
+
+.expenses-filter .DateRangePickerInput{
+    // background-color: transparent;
+    // border: 2px solid $color-1;
+    // padding: .5em;
+    margin: .2em;
+
+}

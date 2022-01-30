@@ -1,0 +1,20 @@
+.total-expenses{
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.total-expenses .add-expense {
+    color: $color-4;
+    background-color: $color-1;
+    border: 1px solid $color-4;
+    padding: .7em;
+    margin: 1em;
+    text-decoration: none;
+    transition: ease .3s;
+    font-weight: 400;
+    font-size: 1.1em;
+}

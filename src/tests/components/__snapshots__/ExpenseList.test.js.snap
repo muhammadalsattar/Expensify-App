@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render list of expenses 1`] = `
-<div>
+<div
+  className="m-5"
+>
   <Connect(ExpenseListItem)
     id="0"
     key="0"
@@ -14,9 +16,13 @@ exports[`should render list of expenses 1`] = `
 `;
 
 exports[`should render no expenses message 1`] = `
-<div>
-  <p>
-    No Expenses yet
-  </p>
+<div
+  className="m-5"
+>
+  <h1
+    className="noexpenses m-5"
+  >
+    No Expenses Yet!
+  </h1>
 </div>
 `;

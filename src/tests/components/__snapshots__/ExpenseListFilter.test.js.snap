@@ -1,13 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render Expense List Filters 1`] = `
-<div>
+<div
+  className="input-group expenses-filter mx-auto"
+>
   <input
+    className="form-control"
     onChange={[Function]}
+    placeholder="Search Expenses"
     type="text"
     value=""
   />
   <select
+    className="form-select"
     onChange={[Function]}
     value=""
   >

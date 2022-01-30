@@ -1,0 +1,42 @@
+.editexpense-section{
+    width: 60%;
+    text-align: center;
+}
+.editexpense-section form{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.editexpense-section input{
+    margin: .5em;
+    border-radius: 0%;
+    padding: .7em;
+}
+
+.editexpense-section textarea{
+    margin: .6em;
+    border-radius: 0%;
+    padding: .5em;
+}
+.editexpense-section .SingleDatePicker {
+    width: 101%;
+    padding: .3em;
+    margin: .6em;
+    border-radius: 0%;
+    text-align: start;
+}
+
+.editexpense-section .submit-button{
+    margin: .5em;
+    border-radius: 0%;
+    padding: .7em;
+    width: 100%;
+}
+
+.editexpense-section .remove-expense{
+    font-size: 1.2em;
+    text-decoration: none;
+}

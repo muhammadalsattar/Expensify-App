@@ -1,0 +1,62 @@
+.loginpage{
+    width: 100vw;
+    height: 100vh;
+    background: rgba($color: $color-1, $alpha: 1.0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loginpage .header {
+    font-size: 7em;
+    letter-spacing: .04em;
+    font-family: $logo-font;
+    font-weight: 400;
+    color: $color-3;
+    background-color: transparent;
+}
+.loginpage .subheading{
+    width: 80%;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: .1em;
+    color: $color-4;
+    font-size: 1.2em;
+    background-color: transparent;
+}
+.loginpage button {
+    color: $color-3 !important;
+    background-color: $color-1 !important;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    padding: 1em;
+    border-radius: 0%;
+    border: .01em solid $color-3;
+    transition: ease-in-out .2s;
+}
+.loginpage button:hover{
+    color: $color-1 !important;
+    background-color: $color-3 !important;
+    border: 1px solid $color-1;
+}
+
+@media screen and (max-width: 660px) {
+    .loginpage .header {
+        font-size: 5em;
+        letter-spacing: .02em;
+    }
+    .loginpage .subheading{
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .loginpage .header {
+        font-size: 4em;
+        letter-spacing: .02em;
+    }
+    .loginpage .subheading{
+        font-size: 1em;
+    }
+}

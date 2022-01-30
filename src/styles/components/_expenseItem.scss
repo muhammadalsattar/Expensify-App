@@ -1,0 +1,27 @@
+.expense-item {
+    width: 80%;
+    border-radius: 0 !important;
+    transition: ease .3s;
+}
+.expense-item .card-body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // background-color: $color-3 !important;
+}
+.expense-item a{
+    text-decoration: none !important;
+}
+.expense-item .card-title{
+    font-size: 2.5em;
+    font-weight: 400;
+}
+.expense-item .card-text{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.expense-item .card-footer{
+    border-radius: 0 !important;
+    background-color: $color-4;
+}

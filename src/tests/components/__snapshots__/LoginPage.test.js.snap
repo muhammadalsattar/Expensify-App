@@ -1,9 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render LoginPage component 1`] = `
-<div>
-  <button>
-    Login
+<div
+  className="loginpage"
+>
+  <h1
+    className="header my-3"
+  >
+    Expensify
+  </h1>
+  <h3
+    className="subheading mx-auto"
+  >
+    It's time to put your expenses under control.
+  </h3>
+  <button
+    className="mt-5"
+  >
+    Sign In With Google
   </button>
 </div>
 `;
